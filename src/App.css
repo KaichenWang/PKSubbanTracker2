@@ -1,0 +1,33 @@
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.App__main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: stretch;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.App__actions {
+  background-color: var(--dark-semi);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.App__actions > * + * {
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .App__actions {
+    order: -1;
+  }
+}

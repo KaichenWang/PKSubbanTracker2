@@ -1,0 +1,24 @@
+.Loader::before {
+  content: '';
+  display: block;
+  border: 1rem solid var(--light);
+  border-top: 1rem solid var(--accent);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 1s linear infinite;
+}
+
+.Loader--inverse::before {
+  border: 1rem solid var(--accent);
+  border-top: 1rem solid var(--light);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

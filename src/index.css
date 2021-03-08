@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Saira+Condensed:wght@600&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --dark: #000;
+  --light: #fff;
+  --dark-alpha: rgba(0, 0, 0, 0.8);
+  --light-alpha: rgba(255, 255, 255, 0.8);
+  --dark-semi: #222222;
+  --light-semi: #6d6d6d;
+  --accent: #0069ed;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Saira Condensed', sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+button {
+  border: 0.2rem solid var(--light-semi);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  text-decoration: none;
+  background-color: var(--dark-semi);
+  color: var(--light);
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0.5rem;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.4rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  transition: border 0.2s;
+}
+
+button > * + * {
+  margin-left: 1rem;
+}
+
+button > svg {
+  fill: currentColor;
+}
+
+button:hover {
+  border-color: var(--light);
+}
+
+*:focus-visible {
+  box-shadow: 0 0 0 0.2rem var(--accent);
+  outline: 0.2rem solid transparent;
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.2rem var(--accent);
+  outline: 0.2rem solid transparent;
+}
+
+*:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: 0;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 2.4rem;
+  }
+}
