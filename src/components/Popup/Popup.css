@@ -34,6 +34,7 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
+  display: flex;
 }
 
 @media only screen and (min-width: 768px)  {

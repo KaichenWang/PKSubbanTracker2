@@ -18,8 +18,9 @@ function Comments(props) {
       js.async = true;
       js.defer = true;
       js.crossOrigin = 'anonymous';
+      js.nonce = 'RNHYuPpu';
       js.src =
-        'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=1825083474401640';
+        'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=1825083474401640&autoLogAppEvents=1';
       window.document.body.appendChild(js);
     };
     init();
@@ -40,7 +41,7 @@ function Comments(props) {
           <div className="fb-wrapper" id="fb-main">
             <div
               className="fb-comments"
-              data-href="http://www.pksubbantracker.com/"
+              data-href="www.pksubbantracker.com/"
               data-width="100%"
               data-numposts="8"
               data-order-by="reverse_time"
