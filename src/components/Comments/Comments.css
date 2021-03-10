@@ -1,6 +1,7 @@
 .Comments {
   margin: auto -0.8rem;
   width: 100%;
+  flex-grow: 1;
 }
 
 .Comments > * {
