@@ -8,5 +8,5 @@ npm run-script build
 
 Commit changes to `/build` and run
 ```
-git subtree push --prefix build origin gh-pages
+git push origin `git subtree split --prefix build main`:gh-pages --force
 ```
